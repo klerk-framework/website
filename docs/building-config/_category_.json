@@ -1,0 +1,8 @@
+{
+  "label": "Building configuration",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Details on how to build your configuration."
+  }
+}
