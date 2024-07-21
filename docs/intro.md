@@ -56,7 +56,5 @@ clerk.meta.start()
 
 __3. Use Clerk__: Read data and issue commands to modify data.
 ```
-val myBook = clerk.read(context) {
-    get(myBookID)
-}
+val myBook = clerk.read(context) { get(myBookId) }
 ```

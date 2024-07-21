@@ -52,6 +52,9 @@ generate state diagrams which enables non-programmers to grasp how the system ac
 accessible and understandable documentation is useful for many stakeholders (e.g. Product Owners, customers, testers,
 onboarding developers, support, sales).
 
+Another benefit of this declarative approach is that Clerk can analyze the configuration and find
+problems at startup. This reduces the risk of bugs showing up in production.
+
 ### Simple
 
 Clerk encourages you to write simple code. As you mostly write data structures and pure functions and use these

@@ -7,11 +7,10 @@ sidebar_position: 2
 A common theme is that you provide functions when you declare how the framework should behave. These functions will
 be called by the framework at the appropriate times.
 
-These functions should be [pure](https://en.wikipedia.org/wiki/Pure_function). This means that they should have these
-two properties:
+These functions should be [pure](https://en.wikipedia.org/wiki/Pure_function), which means:
 
-1. the function return values are identical for identical arguments
-2. the function has no side effects
+1. the functions return values are identical for identical arguments
+2. the functions have no side effects
 
 It is acceptable to use `require()`, `requireNonNull()` or similar even though they can throw `IllegalArgumentException` which
 makes the

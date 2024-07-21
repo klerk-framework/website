@@ -74,7 +74,7 @@ const config = {
           {to: '/commercial-licence', label: 'Commercial licence', position: 'left'},
           {
             href: 'https://gitlab.com/linustornkrantz/dataframework',
-            label: 'GitHub',
+            label: 'GitLab',
             position: 'right',
           },
           {to: '/blog/rss.xml',
