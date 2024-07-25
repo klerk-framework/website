@@ -1,11 +1,27 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# Writing pure functions
+# DSL and functions
 
-A common theme is that you provide functions when you declare how the framework should behave. These functions will
+A common theme is that you use Clerk's domain specific language (DSL) to describe the system on a high level and supply 
+functoions to specify the details of how the framework should behave. These functions will
 be called by the framework at the appropriate times.
+
+:::tip
+Don't worry about remembering which parameters a function should take and what the return
+type should be. The IDE will help you! First tell Clerk about the function in the DSL:
+```
+authentication {
+   readModel {
+      positive {
+         rule(::generalsCanReadClassifiedReports)
+         ...
+```
+Then ask the IDE to generate the function for you. In IntelliJ, use Alt+enter to bring up the context actions.
+:::
+
+## Pure functions
 
 These functions should be [pure](https://en.wikipedia.org/wiki/Pure_function), which means:
 

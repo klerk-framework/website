@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Getting Started
 
+:::note
+The documentation is still work in progress.
+:::
+
 Ask for a token, store it on your local file system as described here:
 https://docs.gitlab.com/ee/user/packages/gradle_repository/#authenticate-to-the-package-registry-with-gradle
 

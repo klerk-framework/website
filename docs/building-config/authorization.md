@@ -14,24 +14,25 @@ multi-factor authentication:
 authorizationRules {
     reads {
         positive {
-            rule(::`Users in the financial department can read everything`)
+            rule(::usersInTheFinancialDepartmentCanReadEverything)
         }
         negative {
         }
     }
     events {
         positive {
-            rule(::`The CFO can trigger any event`)
+            rule(::theCFOCanTriggerAnyEvent)
         }
         negative {
-            rule(::`Must be authenticated with multi-factor`)
+            rule(::mustBeAuthenticatedWithMultiFactor)
         }
     }
     eventLog {
         positive {
-            rule(::`Superadmin can read event log`)
+            rule(::superadminCanReadEventLog)
         }
-        negative {}
+        negative {
+        }
     }
 }
 ```

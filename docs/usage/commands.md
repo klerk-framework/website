@@ -25,7 +25,7 @@ val result = clerk.handle(
 In the example above, we issue the command CreateAuthor with some parameters. 
 Since we don´t want to execute this event on a specific model, we set `mode = null`.
 
-When interacting with Clerk, we always provide a `context`. This includes information about who is the actor, i.e. 
+When interacting with Clerk, we always provide a [context](/docs/building-config/context). This includes information about who is the actor, i.e. 
 on whose behalf is the command issued. This actor is among other things used when evaluating the authorization rules.
 
 We can also see that a `ProcessingOptions` object is supplied. Here we can specify things like if the command should

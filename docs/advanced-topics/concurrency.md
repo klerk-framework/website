@@ -21,7 +21,7 @@ When reading more than one thing, you probably want a guarantee that no event ca
 by acquiring a read lock. Bear in mind that if you do a lot of work while you have a read lock, the write performance of
 the
 system might degrade somewhat. This is usually not a problem when handling requests from other systems (e.g. responding
-to an HTTP request) but pay attention to this in your Jobs where you might initiate requests over the network. It is
+to an HTTP request) but pay attention to this in your [jobs](/docs/advanced-topics/jobs) where you might initiate requests over the network. It is
 often
 possible to fix this by first read all data, release the lock and then to perform the work.
 

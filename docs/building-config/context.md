@@ -12,7 +12,7 @@ val myReport = clerk.read(context) { get(myReportId) }
 The most important piece in a context
 is `actor`, which specifies on whose behalf the interaction occurs (usually a logged-in user).
 
-The context will be supplied in the parameters in many of the functions you will provide in the configuration. As an
+The context will be included in the parameters in many of the functions you provide to Clerk. As an
 example,
 to declare a rule that generals can read classified reports, you will create a function that looks something like this:
 
@@ -24,7 +24,7 @@ fun generalsCanReadClassifiedReports(args: ArgContextReader<Ctx, Collections>): 
 It is recommended to name the context class "Ctx" but you are free to call it whatever you like. The class must
 implement the `ClerkContext` interface.
 
-:::info
+:::tip
 If you are eager to get started, just copy this into your code:
 ```
 class Ctx(

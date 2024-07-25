@@ -26,7 +26,7 @@ However, there are other validation methods that are preferred to validation fun
     * max
 
 If these validation methods are not sufficient, you can always supply one or more validation functions. As an example,
-when validating URLs you can use the UrlValidator in Apache Commons line this:
+when validating URLs you can use the UrlValidator in Apache Commons like this:
 
 ```
 val urlValidator = UrlValidator()
@@ -35,7 +35,7 @@ class WebsiteUrl(url: String) : StringContainer(url) {
     override val minLength = 5
     override val maxLength = 100
 
-    override val validators: Set<() -> InvalidParametersProblem?> = setOf(::validUrl)
+    override val validators = setOf(::validUrl)
 
     private fun validUrl(): InvalidParametersProblem? {
         return if (urlValidator.isValid(value)) null else InvalidParametersProblem()
