@@ -18,7 +18,7 @@ The following naming is used:
 
 ## Read one thing
 
-The simplest way of reading a model (assuming you have a Context and a Reference to the model) is
+The simplest way of reading a model (assuming you have a context and a model id) is
 
 ```
 val myModel = clerk.read(context) { get(id) }
@@ -27,7 +27,7 @@ val myModel = clerk.read(context) { get(id) }
 Similarly, if you want to read a list of models:
 
 ```
-val myTodos = clerk.read(context) { list(collections.todos.all()) }
+val myTodos = clerk.read(context) { list(data.todos.all) }
 ```
 
 ## Read two or three things
@@ -50,15 +50,14 @@ val (first, second, third) = clerk.read(context) {
 
 ## Read many things
 
-Use a data class to return many things at once:
+Use a data class to return more than three things at once:
 
 ```
 val manyThings = clerk.read(context) {
     val todo = get(todoId)
     val owner = get(todo.props.owner)
     val someState = get(someId).state
-    val numberOfTodos = list(collections.todos.all()).size
-
+    val numberOfTodos = list(data.todos.all).size
     data class ManyThings(val todo: Model<Todo>, val user: Model<User>, val someState: String, val numberOfTodos: Int)
     ManyThings(todo, owner, someState, numberOfTodos)
 }

@@ -13,13 +13,13 @@ are several reasons for this:
 
 ## Validation
 
-All container types can be validated by supplying one or more validator functions.
-
-However, there are other validation methods that are preferred to validation functions:
+Clerk provides several ways to ensure that your data is valid. DataContainers contains the validation rules on the 
+primitive level. Describe your data using these properties:
 
 * String:
     * minLength
     * maxLength
+    * maxLines
     * regexPattern (optional)
 * Numbers (Int, Long, Float etc):
     * min
@@ -47,7 +47,7 @@ class WebsiteUrl(url: String) : StringContainer(url) {
 ## Authorization
 
 Authorization rules are enforced when you try to extract the value in the container. This means that you may be
-authorized to read the User (i.e. model) but not the UserName (i.e. property). There are several methods to extract the
+authorized to read the User (i.e. model) but not its UserName (i.e. property). There are several methods to extract the
 value. Some will throw an exception if you are not authorized, other will return null. Unless you override the toString
 method, it will return [••••••] if unauthorized.
 

@@ -15,7 +15,7 @@ and reading of a specific property in the model are two different things.
 * The system you create has an attribute-based access control (ABAC). And since you write your own functions to configure 
 [authorization](/docs/building-config/authorization), you can easily describe the rules as you want them. 
 * As the concurrency model is serializable and all rules are evaluated immediately before an event is accepted, the
-  system is protected against "time of check, time of use" (TOCTOU) flaws.
+  system is protected against "time of check, time of use" (TOCTOU) vulnerabilities.
 * Commands are idempotent. While not strictly a security measure, idempotence ensures that data is not modified by 
 mistake.
-* The form-builder (plugin) protects against Cross-site request forgery (CSRF).
+* The form-builder (plugin) protects against Cross-site request forgery (CSRF) attacks.

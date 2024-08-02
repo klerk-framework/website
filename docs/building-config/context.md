@@ -14,11 +14,15 @@ is `actor`, which specifies on whose behalf the interaction occurs (usually a lo
 
 The context will be included in the parameters in many of the functions you provide to Clerk. As an
 example,
-to declare a rule that generals can read classified reports, you will create a function that looks something like this:
+to declare a rule that generals can read secret reports, you will create a function that looks something like this:
 
 ```
-fun generalsCanReadClassifiedReports(args: ArgContextReader<Ctx, Collections>): PositiveAuthorization =
-    if (args.context.user.rank == General) Allow else NoOpinion
+fun generalsCanReadSecretReports(args: ArgContextReader<Ctx, Collections>): PositiveAuthorization {
+    if (args.model !is Report || args.model.classification != Secret) {
+        return NoOpinion
+    }
+    return if (args.context.user.rank == General) Allow else NoOpinion
+}
 ```
 
 It is recommended to name the context class "Ctx" but you are free to call it whatever you like. The class must
@@ -92,7 +96,7 @@ suspend fun ApplicationCall.context(): Ctx {
     if (user == null) {
         return Ctx(Unauthenticated)
     }
-    return Ctx(ModelIdentity(user), user = user)
+    return Ctx(actor = ModelIdentity(user), user = user)
 }
 ```
 We can now handle the request:

@@ -28,6 +28,11 @@ Since we don´t want to execute this event on a specific model, we set `mode = n
 When interacting with Clerk, we always provide a [context](/docs/building-config/context). This includes information about who is the actor, i.e. 
 on whose behalf is the command issued. This actor is among other things used when evaluating the authorization rules.
 
-We can also see that a `ProcessingOptions` object is supplied. Here we can specify things like if the command should
-really be executed or if we only want to do a dry-run (i.e. see what would happen if the command was issued for real).
+We can also see that a `ProcessingOptions` object is supplied. 
 In the example, only a simple `CommandToken` is provided in order to ensure idempotence.
+
+## Dry run
+
+If a command is issued with `CommandOption(dryRun = true)`, the command is evaluated, but it will have no effect. This 
+can be used to see what would happen if the command would be issued for real. The response will contain the updated
+models as normal but will not be persisted. Also note that none of the actions or jobs will be executed.

@@ -8,14 +8,13 @@ sidebar_position: 1
 The documentation is still work in progress.
 :::
 
-Ask for a token, store it on your local file system as described here:
+Clerk is currently residing in a private repository. Ask for a token, store it on your local file system as described here:
 https://docs.gitlab.com/ee/user/packages/gradle_repository/#authenticate-to-the-package-registry-with-gradle
 
-In your consuming project add this to your build.gradle.kts
+Add this in build.gradle.kts:
 
 ```
 repositories {
-    ...
     maven {
         url = uri("https://gitlab.com/api/v4/projects/33843632/packages/maven")
         name = "GitLab"
@@ -27,6 +26,7 @@ repositories {
             create("header", HttpHeaderAuthentication::class)
         }
     }
+    ...
 }
 ```
 
