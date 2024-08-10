@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkklerk_website=self.webpackChunkklerk_website||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/klerk/blog","blogTitle":"Blog"}')}}]);
