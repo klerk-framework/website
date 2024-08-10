@@ -26,16 +26,16 @@ export default function Home() {
   return (
     <Layout
     //  title={`${siteConfig.title}`}
-      description="Clerk is a dataframework in Kotlin">
+      description="Klerk is a dataframework in Kotlin">
       <HomepageHeader />
         <main>
             <div className={clsx('col col--4')}>
                 <p>
-                    Clerk is a Kotlin framework for developing information systems on the JVM. It replaces the database
+                    Klerk is a Kotlin framework for developing information systems on the JVM. It replaces the database
                     and
                     business-logic code in a traditional system. You are free to use other backend components to build
                     whatever you want on
-                    top of Clerk, such as
+                    top of Klerk, such as
 
                     * an API (JSON, REST, GraphQL) serving your frontend
                     * a web app using server generated HTML

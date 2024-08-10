@@ -8,12 +8,12 @@ Use data classes to declare your models. Don't start their names with 'Plugin' a
 by plugins.
 
 When declaring your models and parameters, you can use strings, numbers (signed and unsigned) and characters. You can
-also use lists and sets containing the mentioned types. Clerk requires you to put your values in DataContainers. There
+also use lists and sets containing the mentioned types. Klerk requires you to put your values in DataContainers. There
 are several reasons for this:
 
 ## Validation
 
-Clerk provides several ways to ensure that your data is valid. DataContainers contains the validation rules on the 
+Klerk provides several ways to ensure that your data is valid. DataContainers contains the validation rules on the 
 primitive level. Describe your data using these properties:
 
 * String:
@@ -101,7 +101,7 @@ class LastInvoiceTime(value: Long) : LongContainer(value) {
 }
 ```
 
-Even though Clerk thinks of LastInvoiceTime as a Long, we can now interact with it using Instants.
+Even though Klerk thinks of LastInvoiceTime as a Long, we can now interact with it using Instants.
 
 This concept can be extended by complementing your types with the [Measured library](https://github.com/nacular/measured) in order to help with units of
 measure.

@@ -38,12 +38,12 @@ authorizationRules {
 }
 ```
 
-As you can see above, you provide Clerk with functions that will be called when the user tries to do
-something. These functions consider the request and current state and returns a decision. So Clerk uses
+As you can see above, you provide Klerk with functions that will be called when the user tries to do
+something. These functions consider the request and current state and returns a decision. So Klerk uses
 attribute-based access control (ABAC). If you prefer role-based access control (RBAC) you can easily implement that
 with a role property on your User model.
 
-If your rule needs information that is not located within Clerk, it is recommended to provide that information in
+If your rule needs information that is not located within Klerk, it is recommended to provide that information in
 the Context. In this case you would add a field called "isMultiFactorAuthenticated" to the context and use that in the
 rule. It is also possible to make requests to another system over the network within your rules but be aware that this
 may severely impact performance.

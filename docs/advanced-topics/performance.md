@@ -4,7 +4,7 @@ sidebar_position: 6
 ---
 # Performance
 
-Clerk is designed so that you can achieve low latencies and high read throughput without
+Klerk is designed so that you can achieve low latencies and high read throughput without
 any extra effort. It is recommended to not care about performance (i.e. optimize
 for
 code readability and simplicity) until you know for sure that performance will be a problem. Chances are that you will

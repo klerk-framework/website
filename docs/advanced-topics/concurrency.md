@@ -4,10 +4,10 @@ sidebar_position: 1
 
 # Concurrency
 
-As Clerk is designed to be simple, concurrency is something you can mostly ignore. However, there are
+As Klerk is designed to be simple, concurrency is something you can mostly ignore. However, there are
 some things that can be good to know about:
 
-Clerk defaults to [ACID](https://en.wikipedia.org/wiki/ACID)
+Klerk defaults to [ACID](https://en.wikipedia.org/wiki/ACID)
 with [serializable](https://en.wikipedia.org/wiki/Isolation_(database_systems)#Serializable) isolation. Locks are used
 to ensure that the system processes
 exactly one event at a time.
@@ -15,7 +15,7 @@ As events are processed sequentially, events will be enqueued if submitted when 
 Reading is blocked during the processing of an event, ensuring strong consistency.
 The reduced performance due to the locks is somewhat mitigated by
 the fact that all data resides in memory. But since events are never processed
-in parallel, Clerk is not able to handle massive writes.
+in parallel, Klerk is not able to handle massive writes.
 
 When reading more than one thing, you probably want a guarantee that no event can occur between the reads. This is done
 by acquiring a read lock. Bear in mind that if you do a lot of work while you have a read lock, the write performance of

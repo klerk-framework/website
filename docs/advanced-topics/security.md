@@ -4,11 +4,11 @@ sidebar_position: 3
 ---
 # Security
 
-Clerk has some properties that helps you secure the data:
+Klerk has some properties that helps you secure the data:
 
-* Clerk is secure by design, i.e. the [authorization](/docs/building-config/authorization) rules are evaluated 
+* Klerk is secure by design, i.e. the [authorization](/docs/building-config/authorization) rules are evaluated 
 automatically (unless explicitly skipped).
-* Clerk is secure by default, i.e. nothing is allowed unless explicitly permitted.
+* Klerk is secure by default, i.e. nothing is allowed unless explicitly permitted.
 * An audit log is provided out-of-the-box.
 * The [authorization](/docs/building-config/authorization) configuration is granular. E.g. reading of a whole model 
 and reading of a specific property in the model are two different things.

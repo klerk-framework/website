@@ -4,7 +4,7 @@ sidebar_position: 6
 ---
 # Validation
 
-In order to maintain data integrity, Clerk lets you add validation rules. These rules apply to different levels.
+In order to maintain data integrity, Klerk lets you add validation rules. These rules apply to different levels.
 It is recommended to validate on the lowest level possible, i.e. validate as much as you can on the DataContainers, then
 move on to the Model level and so on.
 
