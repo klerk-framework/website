@@ -7,14 +7,14 @@ Each model you define will also have a corresponding collections object. This ob
 contains at least the `all` collection. The collections are used when retrieving data. As an example, if you have
 an Invoice model and want to read all invoices:
 ```
-clerk.read(context) { 
+klerk.read(context) { 
    val invoices = list(data.invoices.all) 
 }
 ```
 
 As you can see, the "all" collection for Invoice can be accessed via data.invoices.all. The "data" object is available
-in the Reader, which you acquire through `clerk.read(context)`. This "data" object contains all model collection objects
-and is something that you will have to create and tell the Clerk config builder about when you create the configuration:
+in the Reader, which you acquire through `klerk.read(context)`. This "data" object contains all model collection objects
+and is something that you will have to create and tell the Klerk config builder about when you create the configuration:
 ```
 val config = ConfigBuilder<Ctx, Data>(myData).build {
    ...
@@ -38,17 +38,17 @@ Skip the remaining of this chapter and return when you need to know more about c
 ## Create your own collections
 
 You can create your own collections and make them available in the model collections object. This is not mandatory but
-can make your code more readable and allows Clerk to make some performance optimizations. 
+can make your code more readable and allows Klerk to make some performance optimizations. 
 
 Let's say you frequently read invoices that have the "approved" state. Instead of writing this in many places:
 ```
-clerk.read(context) { 
+klerk.read(context) { 
    val approvedInvoices = list(data.invoices.all) { it.state == "approved" }
 }
 ```
 you would like to access them like this:
 ```
-clerk.read(context) { 
+klerk.read(context) { 
    val approvedInvoices = list(data.invoices.approved)
 }
 ```

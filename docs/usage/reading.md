@@ -21,13 +21,13 @@ The following naming is used:
 The simplest way of reading a model (assuming you have a context and a model id) is
 
 ```
-val myModel = clerk.read(context) { get(id) }
+val myModel = klerk.read(context) { get(id) }
 ```
 
 Similarly, if you want to read a list of models:
 
 ```
-val myTodos = clerk.read(context) { list(data.todos.all) }
+val myTodos = klerk.read(context) { list(data.todos.all) }
 ```
 
 ## Read two or three things
@@ -35,7 +35,7 @@ val myTodos = clerk.read(context) { list(data.todos.all) }
 For two things, use a Pair and destructing declaration:
 
 ```
-val (first, second) = clerk.read(context) {
+val (first, second) = klerk.read(context) {
     Pair(get(firstId), get(secondId))
 }
 ```
@@ -43,7 +43,7 @@ val (first, second) = clerk.read(context) {
 For three things, use a Triple and destructing declaration:
 
 ```
-val (first, second, third) = clerk.read(context) {
+val (first, second, third) = klerk.read(context) {
     Triple(get(firstId), get(secondId), get(thirdId))
 }
 ```
@@ -53,7 +53,7 @@ val (first, second, third) = clerk.read(context) {
 Use a data class to return more than three things at once:
 
 ```
-val manyThings = clerk.read(context) {
+val manyThings = klerk.read(context) {
     val todo = get(todoId)
     val owner = get(todo.props.owner)
     val someState = get(someId).state
@@ -72,7 +72,7 @@ This may lead to simpler code:
 ```
 suspend fun renderWebPage(call: ApplicationCall) {
     ...
-    clerk.readSuspend(call.context()) {
+    klerk.readSuspend(call.context()) {
         call.respondHtml {
             body {
                 h1 { +"Hello ${get(userId).props.name}" }

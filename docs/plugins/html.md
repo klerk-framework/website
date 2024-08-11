@@ -16,7 +16,7 @@ To generate the admin UI, first create a configuration:
 
 ```
 private val autoAdminUIConfig = LowCodeMain(
-    clerk, LowCodeConfig(
+    klerk, LowCodeConfig(
         basePath = "/admin",
         contextProvider = ::contextFromCall,
         showOptionalParameters = ::showOptionalParameters,
@@ -43,16 +43,16 @@ The forms can be generated in two ways: simple and advanced.
 
 ### Simple
 
-The easiest way to generate forms in your application is to ask Clerk to generate 
+The easiest way to generate forms in your application is to ask Klerk to generate 
 a button for each available event:
 
 ```
 val buttonTargets = ButtonTargets(back = "/", model = "/game/{id}", "/")
-clerk.readSuspend(context) {
+klerk.readSuspend(context) {
     call.respondHtml {
         body {
             getPossibleVoidEvents(Game::class).forEach {
-                apply(LowCodeCreateEvent.renderButton(it, clerk, null, createLCConfig(), buttonTargets, context))
+                apply(LowCodeCreateEvent.renderButton(it, klerk, null, createLCConfig(), buttonTargets, context))
             }
         }
     }
@@ -71,7 +71,7 @@ The advanced mode gives you more control of how the form is rendered. The form i
 val createTodoFormTemplate = EventFormTemplate(EventWithParameters(
     event = TodoEvents.CreateTodo.toEvent(),
     parameters = EventParameters(CreateTodoParams::class),
-), clerk,"/todos") {
+), klerk,"/todos") {
     text(CreateTodoParams::title)
     text(CreateTodoParams::body)
     selectReference(CreateTodoParams::owner)

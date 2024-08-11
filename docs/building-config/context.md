@@ -3,16 +3,16 @@ sidebar_position: 2
 ---
 # Context
 
-In all interaction with Clerk you must supply a context. As an example:
+In all interaction with Klerk you must supply a context. As an example:
 
 ```
-val myReport = clerk.read(context) { get(myReportId) }
+val myReport = klerk.read(context) { get(myReportId) }
 ```
 
 The most important piece in a context
 is `actor`, which specifies on whose behalf the interaction occurs (usually a logged-in user).
 
-The context will be included in the parameters in many of the functions you provide to Clerk. As an
+The context will be included in the parameters in many of the functions you provide to Klerk. As an
 example,
 to declare a rule that generals can read secret reports, you will create a function that looks something like this:
 
@@ -26,7 +26,7 @@ fun generalsCanReadSecretReports(args: ArgContextReader<Ctx, Collections>): Posi
 ```
 
 It is recommended to name the context class "Ctx" but you are free to call it whatever you like. The class must
-implement the `ClerkContext` interface.
+implement the `KlerkContext` interface.
 
 :::tip
 If you are eager to get started, just copy this into your code:
@@ -36,7 +36,7 @@ class Ctx(
     override val auditExtra: String? = null,
     override val time: Instant = Clock.System.now(),
     override val translator: Translator = DefaultTranslator(),
-) : ClerkContext
+) : KlerkContext
 ```
 Whenever you need a context, just do `Ctx(Unauthenticated)`
 
@@ -48,7 +48,7 @@ The context also contains some other stuff:
 * The current `time. This allows you to keep your functions pure and still make the rules
   dependent on time (e.g. "reports can only be accessed during work hours"). Also, this makes it easy to unit test
   your functions.
-* A `translator`: This is used by Clerk when it produces something that is human-readable, e.g. an error message.
+* A `translator`: This is used by Klerk when it produces something that is human-readable, e.g. an error message.
 * An `auditExtra`: String where you can put other data that you want to be included in the audit log.
 
 You are free to put whatever else you want in the context. 
@@ -78,8 +78,8 @@ data class Ctx(
     override val auditExtra: String? = null,
     override val time: Instant = Clock.System.now(),
     override val translator: Translator = DefaultTranslator(),
-    val user: Model<User>? = null,      // Clerk doesn't care about this
-) : ClerkContext
+    val user: Model<User>? = null,      // Klerk doesn't care about this
+) : KlerkContext
 ```
 
 Let's say the user makes an HTTP request to fetch a report and that a session cookie is 
@@ -90,7 +90,7 @@ suspend fun ApplicationCall.context(): Ctx {
     if (userSession == null) {
         return Ctx(Unauthenticated)
     }
-    val user = clerk.read(Ctx(AuthenticationIdentity)) {
+    val user = klerk.read(Ctx(AuthenticationIdentity)) {
         getFirstWhere(collections.users.all) { it.props.sessionKey.string == userSession }
     }
     if (user == null) {
@@ -101,5 +101,5 @@ suspend fun ApplicationCall.context(): Ctx {
 ```
 We can now handle the request:
 ```
-val myReport = clerk.read(call.context()) { get(myReportId) }
+val myReport = klerk.read(call.context()) { get(myReportId) }
 ```

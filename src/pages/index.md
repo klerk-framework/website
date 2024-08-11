@@ -115,14 +115,18 @@ when many of your business rules depends on state (e.g. "the invoice must be app
 
 However, Klerk has some limitations: 
 
-* Clerk is not horizontal scalable (yet). That said, the
-  framework should be able to handle more than 1000 read requests per second.
+* Klerk must currently be run on a single machine. This means that it is not possible to have software redundancy to protect against 
+hardware failures. It also means that Klerk is not horizontal scalable, which limits the system to a few thousand read requests per 
+second on a fairly low-end server. There are plans to 
+make Klerk run on multiple instances which will ensure high-availability and scaling. 
 
 * The framework is designed in such way that it never will be able to process thousands of events
   per second, but it should be able to sustain more than 100 events per second.
 
-* As Clerk keeps all data in memory, it is not recommended to store images etc. in it. Note that it is possible to
-let Clerk handle a subset of your data, so it is possible use Clerk for most data but handle images in a separate way.
+* As Klerk keeps all data in memory, it is not recommended to store images etc. in it. Note that it is possible to
+let Klerk handle a subset of your data, so it is possible use Klerk for the business data but handle images in a separate way.
+Another consequence of keeping the data in memory is that the upstart time may be noticeable if you have many millions 
+of entities in the system.
 
-Taken together, if you are expecting millions of concurrent users, Clerk is probably not a good fit unless you
+Taken together, if you are expecting millions of concurrent users, Klerk is probably not a good fit unless you
 can partition the data (e.g. single-tenant systems).

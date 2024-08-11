@@ -8,7 +8,7 @@ sidebar_position: 1
 To make any changes to the data, we issue commands. E.g:
 
 ```
-val result = clerk.handle(
+val result = klerk.handle(
     Command(
         event = CreateAuthor,
         model = null,
