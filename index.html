@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.4.0">
 <title data-rh="true">Klerk | Klerk</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://prettybyte.com/website/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://prettybyte.com/website/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://prettybyte.com/website/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Klerk | Klerk"><meta data-rh="true" name="description" content="Klerk is Kotlin framework for managing data on the JVM. It replaces the database"><meta data-rh="true" property="og:description" content="Klerk is Kotlin framework for managing data on the JVM. It replaces the database"><link data-rh="true" rel="icon" href="/website/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://prettybyte.com/website/"><link data-rh="true" rel="alternate" href="https://prettybyte.com/website/" hreflang="en"><link data-rh="true" rel="alternate" href="https://prettybyte.com/website/" hreflang="x-default"><script data-rh="true">function insertBanner(){var n=document.createElement("div");n.id="__docusaurus-base-url-issue-banner-container";n.innerHTML='\n<div id="__docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/website/</span> </p>\n   <p>We suggest trying baseUrl = <span id="__docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n',document.body.prepend(n);var e=document.getElementById("__docusaurus-base-url-issue-banner-suggestion-container"),s=window.location.pathname,o="/"===s.substr(-1)?s:s+"/";e.innerHTML=o}document.addEventListener("DOMContentLoaded",(function(){void 0===window.docusaurus&&insertBanner()}))</script><link rel="alternate" type="application/rss+xml" href="/website/blog/rss.xml" title="Klerk RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/website/blog/atom.xml" title="Klerk Atom Feed"><link rel="stylesheet" href="/website/assets/css/styles.9ef707c4.css">
-<script src="/website/assets/js/runtime~main.626d39f5.js" defer="defer"></script>
+<script src="/website/assets/js/runtime~main.bb6297ad.js" defer="defer"></script>
 <script src="/website/assets/js/main.e4d0489a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -96,19 +96,23 @@ when many of your business rules depends on state (e.g. &quot;the invoice must b
 <p>However, Klerk has some limitations:</p>
 <ul>
 <li>
-<p>Clerk is not horizontal scalable (yet). That said, the
-framework should be able to handle more than 1000 read requests per second.</p>
+<p>Klerk must currently be run on a single machine. This means that it is not possible to have software redundancy to protect against
+hardware failures. It also means that Klerk is not horizontal scalable, which limits the system to a few thousand read requests per
+second on a fairly low-end server. There are plans to
+make Klerk run on multiple instances which will ensure high-availability and scaling.</p>
 </li>
 <li>
 <p>The framework is designed in such way that it never will be able to process thousands of events
 per second, but it should be able to sustain more than 100 events per second.</p>
 </li>
 <li>
-<p>As Clerk keeps all data in memory, it is not recommended to store images etc. in it. Note that it is possible to
-let Clerk handle a subset of your data, so it is possible use Clerk for most data but handle images in a separate way.</p>
+<p>As Klerk keeps all data in memory, it is not recommended to store images etc. in it. Note that it is possible to
+let Klerk handle a subset of your data, so it is possible use Klerk for the business data but handle images in a separate way.
+Another consequence of keeping the data in memory is that the upstart time may be noticeable if you have many millions
+of entities in the system.</p>
 </li>
 </ul>
-<p>Taken together, if you are expecting millions of concurrent users, Clerk is probably not a good fit unless you
+<p>Taken together, if you are expecting millions of concurrent users, Klerk is probably not a good fit unless you
 can partition the data (e.g. single-tenant systems).</p></article></div><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a class="table-of-contents__link toc-highlight" href="/website/#basic-ideas">Basic ideas</a><ul><li><a class="table-of-contents__link toc-highlight" href="/website/#declarative">Declarative</a></li><li><a class="table-of-contents__link toc-highlight" href="/website/#simple">Simple</a></li><li><a class="table-of-contents__link toc-highlight" href="/website/#event-driven">Event driven</a></li><li><a class="table-of-contents__link toc-highlight" href="/website/#secure-by-design">Secure by design</a></li><li><a class="table-of-contents__link toc-highlight" href="/website/#secure-by-default">Secure by default</a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/website/#when-is-klerk-a-good-fit">When is Klerk a good fit?</a></li></ul></div></div></div></main></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 PrettyByte AB. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
