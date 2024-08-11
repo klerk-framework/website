@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ConfigBuilder</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            lib
+                    </a>
+            </div>
+            <div class="library-version">
+0.0.266            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":lib:dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="lib::com.prettybyte.klerk/ConfigBuilder///PointingToDeclaration//1440829338">
+  <div class="breadcrumbs"><a href="../../../index.html">lib</a><span class="delimiter">/</span><a href="../index.html">com.prettybyte.klerk</a><span class="delimiter">/</span><span class="current">ConfigBuilder</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Config</span><wbr></wbr><span><span>Builder</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ConfigBuilder</a><span class="token operator">&lt;</span><a href="index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="index.html">D</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataValue<span class="token operator">: </span><a href="index.html">D</a></span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1198759407%2FConstructors%2F1440829338" anchor-label="ConfigBuilder" id="1198759407%2FConstructors%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-config-builder.html"><span>Config</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1198759407%2FConstructors%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataValue<span class="token operator">: </span><a href="index.html">D</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-475573939%2FClasslikes%2F1440829338" anchor-label="AuthorizationEventLogNegativeRulesBlock" id="-475573939%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-event-log-negative-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Event</span><wbr></wbr><span>Log</span><wbr></wbr><span>Negative</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-475573939%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-event-log-negative-rules-block/index.html">AuthorizationEventLogNegativeRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-event-log-negative-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-event-log-negative-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1217383689%2FClasslikes%2F1440829338" anchor-label="AuthorizationEventLogPositiveRulesBlock" id="1217383689%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-event-log-positive-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Event</span><wbr></wbr><span>Log</span><wbr></wbr><span>Positive</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1217383689%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-event-log-positive-rules-block/index.html">AuthorizationEventLogPositiveRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-event-log-positive-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-event-log-positive-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-541998910%2FClasslikes%2F1440829338" anchor-label="AuthorizationEventLogRulesBlock" id="-541998910%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-event-log-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Event</span><wbr></wbr><span>Log</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-541998910%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-event-log-rules-block/index.html">AuthorizationEventLogRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-event-log-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-event-log-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-927826082%2FClasslikes%2F1440829338" anchor-label="AuthorizationEventsNegativeRulesBlock" id="-927826082%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-events-negative-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Events</span><wbr></wbr><span>Negative</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-927826082%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-events-negative-rules-block/index.html">AuthorizationEventsNegativeRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-events-negative-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-events-negative-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="765131546%2FClasslikes%2F1440829338" anchor-label="AuthorizationEventsPositiveRulesBlock" id="765131546%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-events-positive-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Events</span><wbr></wbr><span>Positive</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="765131546%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-events-positive-rules-block/index.html">AuthorizationEventsPositiveRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-events-positive-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-events-positive-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="879792083%2FClasslikes%2F1440829338" anchor-label="AuthorizationEventsRulesBlock" id="879792083%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-events-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Events</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="879792083%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-events-rules-block/index.html">AuthorizationEventsRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-events-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-events-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-576804095%2FClasslikes%2F1440829338" anchor-label="AuthorizationReadNegativeRulesBlock" id="-576804095%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-read-negative-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Read</span><wbr></wbr><span>Negative</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-576804095%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-read-negative-rules-block/index.html">AuthorizationReadNegativeRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-read-negative-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-read-negative-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1116153533%2FClasslikes%2F1440829338" anchor-label="AuthorizationReadPositiveRulesBlock" id="1116153533%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-read-positive-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Read</span><wbr></wbr><span>Positive</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1116153533%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-read-positive-rules-block/index.html">AuthorizationReadPositiveRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-read-positive-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-read-positive-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-235671933%2FClasslikes%2F1440829338" anchor-label="AuthorizationReadPropertiesRulesBlock" id="-235671933%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-read-properties-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Read</span><wbr></wbr><span>Properties</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-235671933%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-read-properties-rules-block/index.html">AuthorizationReadPropertiesRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-read-properties-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-read-properties-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="335804140%2FClasslikes%2F1440829338" anchor-label="AuthorizationReadPropertyNegativeRulesBlock" id="335804140%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-read-property-negative-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Read</span><wbr></wbr><span>Property</span><wbr></wbr><span>Negative</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="335804140%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-read-property-negative-rules-block/index.html">AuthorizationReadPropertyNegativeRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-read-property-negative-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-read-property-negative-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2028761768%2FClasslikes%2F1440829338" anchor-label="AuthorizationReadPropertyPositiveRulesBlock" id="2028761768%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-read-property-positive-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Read</span><wbr></wbr><span>Property</span><wbr></wbr><span>Positive</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2028761768%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-read-property-positive-rules-block/index.html">AuthorizationReadPropertyPositiveRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-read-property-positive-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-read-property-positive-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-634909066%2FClasslikes%2F1440829338" anchor-label="AuthorizationReadRulesBlock" id="-634909066%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-read-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Read</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-634909066%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-read-rules-block/index.html">AuthorizationReadRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-read-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-read-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1807415188%2FClasslikes%2F1440829338" anchor-label="AuthorizationRulesBlock" id="-1807415188%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authorization-rules-block/index.html"><span>Authorization</span><wbr></wbr><span>Rules</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1807415188%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-authorization-rules-block/index.html">AuthorizationRulesBlock</a><span class="token operator">&lt;</span><a href="-authorization-rules-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-authorization-rules-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1584507197%2FClasslikes%2F1440829338" anchor-label="ManagedModelsBlock" id="-1584507197%2FClasslikes%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-managed-models-block/index.html"><span>Managed</span><wbr></wbr><span>Models</span><wbr></wbr><span><span>Block</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1584507197%2FClasslikes%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-managed-models-block/index.html">ManagedModelsBlock</a><span class="token operator">&lt;</span><a href="-managed-models-block/index.html">C</a><span class="token operator"> : </span><a href="../-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="-managed-models-block/index.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1449814308%2FFunctions%2F1440829338" anchor-label="authorization" id="-1449814308%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="authorization.html"><span><span>authorization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1449814308%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="authorization.html"><span class="token function">authorization</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><a href="-authorization-rules-block/index.html">ConfigBuilder.AuthorizationRulesBlock</a><span class="token operator">&lt;</span><a href="index.html">C</a><span class="token punctuation">, </span><a href="index.html">D</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1461450350%2FFunctions%2F1440829338" anchor-label="build" id="-1461450350%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build.html"><span><span>build</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1461450350%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="build.html"><span class="token function">build</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><a href="index.html">ConfigBuilder</a><span class="token operator">&lt;</span><a href="index.html">C</a><span class="token punctuation">, </span><a href="index.html">D</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-config/index.html">Config</a><span class="token operator">&lt;</span><a href="index.html">C</a><span class="token punctuation">, </span><a href="index.html">D</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1835195529%2FFunctions%2F1440829338" anchor-label="contextProvider" id="-1835195529%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="context-provider.html"><span>context</span><wbr></wbr><span><span>Provider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1835195529%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="context-provider.html"><span class="token function">contextProvider</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">provider<span class="token operator">: </span><span class="token punctuation">(</span><a href="../-actor-identity/index.html">ActorIdentity</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="index.html">C</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1590524447%2FFunctions%2F1440829338" anchor-label="managedModels" id="1590524447%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="managed-models.html"><span>managed</span><wbr></wbr><span><span>Models</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1590524447%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="managed-models.html"><span class="token function">managedModels</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><a href="-managed-models-block/index.html">ConfigBuilder.ManagedModelsBlock</a><span class="token operator">&lt;</span><a href="index.html">C</a><span class="token punctuation">, </span><a href="index.html">D</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-617600827%2FFunctions%2F1440829338" anchor-label="micrometerRegistry" id="-617600827%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="micrometer-registry.html"><span>micrometer</span><wbr></wbr><span><span>Registry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-617600827%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="micrometer-registry.html"><span class="token function">micrometerRegistry</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registry<span class="token operator">: </span><span data-unresolved-link="io.micrometer.core.instrument/MeterRegistry///PointingToDeclaration/">MeterRegistry</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1449467349%2FFunctions%2F1440829338" anchor-label="migrations" id="1449467349%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="migrations.html"><span><span>migrations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1449467349%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="migrations.html"><span class="token function">migrations</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">migrationSteps<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk.migration/-migration-step/index.html">MigrationStep</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="451032721%2FFunctions%2F1440829338" anchor-label="persistence" id="451032721%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="persistence.html"><span><span>persistence</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="451032721%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="persistence.html"><span class="token function">persistence</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">persistence<span class="token operator">: </span><a href="../../com.prettybyte.klerk.storage/-persistence/index.html">Persistence</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
