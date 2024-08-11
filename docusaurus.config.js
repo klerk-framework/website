@@ -16,12 +16,13 @@ const config = {
   url: 'https://prettybyte.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/klerk/',
+  baseUrl: '/website/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'prettybyte', // Usually your GitHub org/user name.
-  projectName: 'klerk', // Usually your repo name.
+  organizationName: 'klerk-framework', // Usually your GitHub org/user name.
+  projectName: 'website', // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -43,9 +44,9 @@ const config = {
           sidebarPath: './sidebars.js',
         },
         blog: {
-          feedOptions: {
-            type: 'rss',
-          },
+      //    feedOptions: {
+       //     type: 'rss',
+        //  },
           showReadingTime: false,
         },
         theme: {
@@ -77,9 +78,9 @@ const config = {
             label: 'GitLab',
             position: 'right',
           },
-          {to: '/blog/rss.xml',
-          position: 'right',
-          label: 'RSS'},
+//          {to: '/blog/rss.xml',
+ //         position: 'right',
+  //        label: 'RSS'},
         ],
       },
       footer: {

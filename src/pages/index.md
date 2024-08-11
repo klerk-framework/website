@@ -126,5 +126,3 @@ let Clerk handle a subset of your data, so it is possible use Clerk for most dat
 
 Taken together, if you are expecting millions of concurrent users, Clerk is probably not a good fit unless you
 can partition the data (e.g. single-tenant systems).
-
- 
