@@ -18,7 +18,7 @@ Klerk is open sourced under AGPL ([commercial licenses](commercial-licence) are 
 Klerk means 'bookkeeper' in swedish.
 
 :::note
-Klerk is still in alpha. This means that the API is not yet stable.
+Klerk is still in beta. This means that the API is not yet stable.
 :::
 
 ## Basic ideas

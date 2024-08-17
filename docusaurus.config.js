@@ -70,7 +70,8 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: 'pathname:///website/apidoc/index.html', label: 'API Reference', position: 'left', target: '_blank',},
+   //       {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/plugins', label: 'Plugins', position: 'left'},
           {to: '/commercial-licence', label: 'Commercial licence', position: 'left'},
           {
