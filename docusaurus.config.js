@@ -86,7 +86,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} PrettyByte AB. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} PrettyByte AB.`,
       },
       prism: {
         theme: prismThemes.github,

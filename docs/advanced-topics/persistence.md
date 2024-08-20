@@ -8,8 +8,6 @@ Klerk uses an SQL database under the hood to persist the data.
 
 ## Supported databases
 
-SQLite is recommended, but Klerk should work with:
-
 * SQLite
 * H2
 * MariaDB
@@ -18,12 +16,10 @@ SQLite is recommended, but Klerk should work with:
 * PostgreSQL
 * Microsoft SQL Server
 
-:::note
-Klerk has not been tested thoroughly with databases other than SQLite. 
-:::
 
 ## Configuration
 
+### SQLite
 To configure Klerk to use an SQLite database, first add a dependency to sqlite-jdbc in build.gradle.kts:
 ```
 implementation("org.xerial:sqlite-jdbc:$sqliteJdbcVersion")
