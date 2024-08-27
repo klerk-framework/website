@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Reader</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            lib
+                    </a>
+            </div>
+            <div class="library-version">
+0.0.266            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":lib:dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="lib::com.prettybyte.klerk.read/Reader///PointingToDeclaration//1440829338">
+  <div class="breadcrumbs"><a href="../../../index.html">lib</a><span class="delimiter">/</span><a href="../index.html">com.prettybyte.klerk.read</a><span class="delimiter">/</span><span class="current">Reader</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Reader</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Reader</a><span class="token operator">&lt;</span><a href="index.html">C</a><span class="token operator"> : </span><a href="../../com.prettybyte.klerk/-klerk-context/index.html">KlerkContext</a><span class="token punctuation">, </span><a href="index.html">D</a><span class="token operator">&gt;</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-364355380%2FProperties%2F1440829338" anchor-label="data" id="-364355380%2FProperties%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data.html"><span><span>data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-364355380%2FProperties%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="data.html">data</a><span class="token operator">: </span><a href="index.html">D</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1320055722%2FFunctions%2F1440829338" anchor-label="firstOrNull" id="-1320055722%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="first-or-null.html"><span>first</span><wbr></wbr><span>Or</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1320055722%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="first-or-null.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="first-or-null.html"><span class="token function">firstOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">collection<span class="token operator">: </span><a href="../../com.prettybyte.klerk.collection/-model-collection/index.html">ModelCollection</a><span class="token operator">&lt;</span><a href="first-or-null.html">T</a><span class="token punctuation">, </span><a href="index.html">C</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="first-or-null.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="first-or-null.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Finds the first model in the Collection and passes the provided filter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1243743249%2FFunctions%2F1440829338" anchor-label="get" id="-1243743249%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1243743249%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><a href="get.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="get.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get a model.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-24219130%2FFunctions%2F1440829338" anchor-label="getAllRelatedIds" id="-24219130%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-all-related-ids.html"><span>get</span><wbr></wbr><span>All</span><wbr></wbr><span>Related</span><wbr></wbr><span><span>Ids</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-24219130%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get-all-related-ids.html"><span class="token function">getAllRelatedIds</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Finds all models that have a relation to the specified model.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1712872329%2FFunctions%2F1440829338" anchor-label="getFirstWhere" id="1712872329%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-first-where.html"><span>get</span><wbr></wbr><span>First</span><wbr></wbr><span><span>Where</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1712872329%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-first-where.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get-first-where.html"><span class="token function">getFirstWhere</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">collection<span class="token operator">: </span><a href="../../com.prettybyte.klerk.collection/-model-collection/index.html">ModelCollection</a><span class="token operator">&lt;</span><a href="get-first-where.html">T</a><span class="token punctuation">, </span><a href="index.html">C</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="get-first-where.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="get-first-where.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets the first model from the Collection and passes the provided filter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1375148019%2FFunctions%2F1440829338" anchor-label="getIfAuthorizedOrNull" id="-1375148019%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-if-authorized-or-null.html"><span>get</span><wbr></wbr><span>If</span><wbr></wbr><span>Authorized</span><wbr></wbr><span>Or</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1375148019%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-if-authorized-or-null.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get-if-authorized-or-null.html"><span class="token function">getIfAuthorizedOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><a href="get-if-authorized-or-null.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="get-if-authorized-or-null.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="929341253%2FFunctions%2F1440829338" anchor-label="getOrNull" id="929341253%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-or-null.html"><span>get</span><wbr></wbr><span>Or</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="929341253%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-or-null.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get-or-null.html"><span class="token function">getOrNull</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><a href="get-or-null.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="get-or-null.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1363231865%2FFunctions%2F1440829338" anchor-label="getPossibleAndImpossibleEvents" id="1363231865%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-possible-and-impossible-events.html"><span>get</span><wbr></wbr><span>Possible</span><wbr></wbr><span>And</span><wbr></wbr><span>Impossible</span><wbr></wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1363231865%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-possible-and-impossible-events.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get-possible-and-impossible-events.html"><span class="token function">getPossibleAndImpossibleEvents</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><a href="get-possible-and-impossible-events.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-event-reference/index.html">EventReference</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-problem/index.html">Problem</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns all non-void events for the statemachine along with a set of problems for each event given the provided context. Note that even if the set of problems for an event is empty, it doesn't necessarily mean that the event will succeed (e.g. if the provided parameters violates some rule).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="202522500%2FFunctions%2F1440829338" anchor-label="getPossibleAndImpossibleVoidEvents" id="202522500%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-possible-and-impossible-void-events.html"><span>get</span><wbr></wbr><span>Possible</span><wbr></wbr><span>And</span><wbr></wbr><span>Impossible</span><wbr></wbr><span>Void</span><wbr></wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="202522500%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-possible-and-impossible-void-events.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get-possible-and-impossible-void-events.html"><span class="token function">getPossibleAndImpossibleVoidEvents</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="get-possible-and-impossible-void-events.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-event-reference/index.html">EventReference</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-problem/index.html">Problem</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns all void events for the statemachine along with a set of problems for each event given the provided context. Note that even if the set of problems for an event is empty, it doesn't necessarily mean that the event will succeed (e.g. if the provided parameters violates some rule).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="229788261%2FFunctions%2F1440829338" anchor-label="getPossibleEvents" id="229788261%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-possible-events.html"><span>get</span><wbr></wbr><span>Possible</span><wbr></wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="229788261%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-possible-events.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get-possible-events.html"><span class="token function">getPossibleEvents</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><a href="get-possible-events.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-event-reference/index.html">EventReference</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a set of external events for the model that are possible given the current state and provided context</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1445666536%2FFunctions%2F1440829338" anchor-label="getPossibleVoidEvents" id="-1445666536%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-possible-void-events.html"><span>get</span><wbr></wbr><span>Possible</span><wbr></wbr><span>Void</span><wbr></wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1445666536%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-possible-void-events.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get-possible-void-events.html"><span class="token function">getPossibleVoidEvents</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="get-possible-void-events.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-event-reference/index.html">EventReference</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a set of external void events for the statemachine that are possible given the provided context</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1129054724%2FFunctions%2F1440829338" anchor-label="getRelated" id="-1129054724%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-related.html"><span>get</span><wbr></wbr><span><span>Related</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1129054724%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-related.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get-related.html"><span class="token function">getRelated</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="get-related.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="get-related.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Finds all models of a specified type that has a relation to the specified model.</p></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-related.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><a href="get-related.html">U</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get-related.html"><span class="token function">getRelated</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">property<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-property1/index.html">KProperty1</a><span class="token operator">&lt;</span><a href="get-related.html">T</a><span class="token punctuation">, </span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><a href="get-related.html">U</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="get-related.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1636914891%2FFunctions%2F1440829338" anchor-label="getRelatedInCollection" id="1636914891%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-related-in-collection.html"><span>get</span><wbr></wbr><span>Related</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Collection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1636914891%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-related-in-collection.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><a href="get-related-in-collection.html">U</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="get-related-in-collection.html"><span class="token function">getRelatedInCollection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">property<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-property1/index.html">KProperty1</a><span class="token operator">&lt;</span><a href="get-related-in-collection.html">T</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><a href="get-related-in-collection.html">U</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model-i-d/index.html">ModelID</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="get-related-in-collection.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-879656391%2FFunctions%2F1440829338" anchor-label="isInstanceEventPossible" id="-879656391%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-instance-event-possible.html"><span>is</span><wbr></wbr><span>Instance</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Possible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-879656391%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="is-instance-event-possible.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="is-instance-event-possible.html"><span class="token function">isInstanceEventPossible</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">eventReference<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-event-reference/index.html">EventReference</a><span class="token punctuation">, </span></span><span class="parameter ">model<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="is-instance-event-possible.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">parameters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if a normal event is possible</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1781320087%2FFunctions%2F1440829338" anchor-label="isVoidEventPossible" id="-1781320087%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-void-event-possible.html"><span>is</span><wbr></wbr><span>Void</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Possible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1781320087%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="is-void-event-possible.html"><span class="token function">isVoidEventPossible</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">eventReference<span class="token operator">: </span><a href="../../com.prettybyte.klerk/-event-reference/index.html">EventReference</a><span class="token punctuation">, </span></span><span class="parameter ">parameters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if a void event is possible</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1371626395%2FFunctions%2F1440829338" anchor-label="list" id="1371626395%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list.html"><span><span>list</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1371626395%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="list.html"><span class="token function">list</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">modelCollection<span class="token operator">: </span><a href="../../com.prettybyte.klerk.collection/-model-collection/index.html">ModelCollection</a><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token punctuation">, </span><a href="index.html">C</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Get all models in the Collection that passes the provided filter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-636007770%2FFunctions%2F1440829338" anchor-label="listIfAuthorized" id="-636007770%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list-if-authorized.html"><span>list</span><wbr></wbr><span>If</span><wbr></wbr><span><span>Authorized</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-636007770%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="list-if-authorized.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="list-if-authorized.html"><span class="token function">listIfAuthorized</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">collection<span class="token operator">: </span><a href="../../com.prettybyte.klerk.collection/-model-collection/index.html">ModelCollection</a><span class="token operator">&lt;</span><a href="list-if-authorized.html">T</a><span class="token punctuation">, </span><a href="index.html">C</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="list-if-authorized.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">List all models that are specified in a Collection. Unauthorized models are removed from the result.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1005013527%2FFunctions%2F1440829338" anchor-label="query" id="-1005013527%2FFunctions%2F1440829338" data-filterable-set=":lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":lib:dokkaHtml/main" data-filterable-set=":lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="query.html"><span><span>query</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1005013527%2FFunctions%2F1440829338"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="query.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="query.html"><span class="token function">query</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">collection<span class="token operator">: </span><a href="../../com.prettybyte.klerk.collection/-model-collection/index.html">ModelCollection</a><span class="token operator">&lt;</span><a href="query.html">T</a><span class="token punctuation">, </span><a href="index.html">C</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="../../com.prettybyte.klerk.collection/-query-options/index.html">QueryOptions</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../com.prettybyte.klerk/-model/index.html">Model</a><span class="token operator">&lt;</span><a href="query.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.prettybyte.klerk.collection/-query-response/index.html">QueryResponse</a><span class="token operator">&lt;</span><a href="query.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

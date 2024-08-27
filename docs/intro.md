@@ -47,7 +47,7 @@ When developing a system using Klerk, we must:
 
 __1. Build a configuration__: This is where you declare all rules.
 ```
-val config = ConfigBuilder<Context, MyCollections>(collections).build {
+val config = ConfigBuilder<Ctx, Data>(collections).build {
     // lots of stuff here
 }
 ```

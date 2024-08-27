@@ -4,15 +4,34 @@ sidebar_position: 4
 
 # DSL and functions
 
-A common theme is that you use Klerk's domain specific language (DSL) to describe the system on a high level and supply 
-functions to specify the details of how the framework should behave. These functions will
-be called by the framework at the appropriate times.
+In Klerk, you use the Domain Specific Language (DSL) to define your system at a high level and then implement the details through pure functions. These functions are called by the framework at the appropriate times to enforce the behavior you've specified.
+
+For example, if you want generals to be allowed to read secret reports, you would define a rule using both the DSL and a pure function:
+
+```
+val config = ConfigBuilder<Ctx, Data>(collections).build {
+    authentication {
+       readModel {
+          positive {
+             rule(::generalsCanReadSecretReports)
+          }
+       }
+       ...
+    }
+}
+
+fun generalsCanReadSecretReports(args: ArgContextReader<Ctx, Data>): PositiveAuthorization {
+    if (args.model !is Report || args.model.classification != Secret) {
+        return NoOpinion
+    }
+    return if (args.context.user.rank == General) Allow else NoOpinion
+}
+```
 
 :::tip
-Design the system top-down, i.e. start with outlining the big pieces and leave the details for later.
-In Klerk, this means that you start with the DSL. Only turn your attention to the functions when you are satisfied with the specification. 
-You still have to create the functions so that you can
-add them in the DSL, but just put a `TODO()` in the function body for now.
+Design the system from the top down. Start by outlining the big pieces, leaving the details for later.
+In Klerk, this means beginning with the DSL. Only turn your attention to the functions when you are satisfied with the specification.
+While you will need to create the function signatures for inclusion in the DSL, you can initially leave the function bodies empty by using `TODO()` placeholders.
 
 Klerk provides limited functionality even when the function bodies are empty. It is not possible
 to read data and issue commands, but it _is_ possible to view the generated documentation in the Admin UI.
@@ -40,19 +59,11 @@ event, so it is safe to have
 ```
 requireNonNull(args.context.loggedInUser)
 ```
- in the update function. If the update function ever
+in the update function. If the update function ever
 throws an exception, you have a bug and need to figure out how context.loggedInUser could be null when
 the update was triggered.
 
 :::tip
 Don't worry about remembering which parameters a function should take and what the return
-type should be. The IDE will help you! First tell Klerk about the function in the DSL:
-```
-authentication {
-   readModel {
-      positive {
-         rule(::generalsCanReadSecretReports)
-         ...
-```
-Then ask the IDE to generate the function for you. In IntelliJ, use Alt+enter to bring up the context actions.
+type should be. The IDE will help you! First tell Klerk about the function in the DSL, then ask the IDE to generate the function for you. In IntelliJ, use Alt+enter to bring up the context actions.
 :::

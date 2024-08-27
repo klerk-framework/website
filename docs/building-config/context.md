@@ -17,7 +17,7 @@ example,
 to declare a rule that generals can read secret reports, you will create a function that looks something like this:
 
 ```
-fun generalsCanReadSecretReports(args: ArgContextReader<Ctx, Collections>): PositiveAuthorization {
+fun generalsCanReadSecretReports(args: ArgContextReader<Ctx, Data>): PositiveAuthorization {
     if (args.model !is Report || args.model.classification != Secret) {
         return NoOpinion
     }

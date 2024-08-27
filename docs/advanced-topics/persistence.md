@@ -34,7 +34,7 @@ ds.url = "jdbc:sqlite:/path/to/database"
 Create a SqlPersistence object and configure Klerk to use it:
 ```
 val sqlitePersistence = SqlPersistence(ds)
-val config = ConfigBuilder<Context, Data>(Data).build {
+val config = ConfigBuilder<Ctx, Data>(Data).build {
     persistence(sqlitePersistence)
     ...
 }
