@@ -6,7 +6,7 @@ title: Commercial license
 
 Klerk is open sourced under [AGPL](https://gitlab.com/linustornkrantz/dataframework/-/blob/master/LICENSE.md?ref_type=heads). 
 
-If you need a commercial licence, contact us at linus@prettybyte.com.
+If you need a commercial licence, contact us at info@klerkframework.dev.
 
 As long as Klerk in beta, the commercial license is free. However, you should expect to find bugs in the beta state. Since it is important for us that your project succeeds, 
 we currently only provide commercial licenses when you sign a support agreement with us.

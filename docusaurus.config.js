@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://prettybyte.com',
+  url: 'https://klerkframework.dev',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/website/',
@@ -44,9 +44,12 @@ const config = {
           sidebarPath: './sidebars.js',
         },
         blog: {
-      //    feedOptions: {
-       //     type: 'rss',
-        //  },
+          feedOptions: {
+            type: 'rss',
+            title: 'Klerk framework',
+            language: 'en',
+            limit: 20,
+          },
           showReadingTime: false,
         },
         theme: {
@@ -79,9 +82,7 @@ const config = {
             label: 'GitLab',
             position: 'right',
           },
-//          {to: '/blog/rss.xml',
- //         position: 'right',
-  //        label: 'RSS'},
+//          {to: '/blog/rss.xml', position: 'right', label: 'RSS'},
         ],
       },
       footer: {
