@@ -7,9 +7,18 @@ sidebar_position: 5
 Use data classes to declare your models. Don't start their names with 'Plugin' as that is reserved for models declared
 by plugins.
 
-When declaring your models and parameters, you can use strings, booleans, numbers (signed and unsigned) and characters. You can
-also use data classes, lists and sets containing the mentioned types. Klerk requires you to put your values in DataContainers. There
-are several reasons for this:
+When declaring your models and parameters, you can use these types:
+* String
+* Boolean
+* Numbers (signed and unsigned)
+* data classes (containing only types in this list)
+* Instant (limited to years between -290308 and +294247 with microsecond resolution)
+* Duration (limited to microsecond resolution)
+* GeoPosition (latitude and longitude with at least 6 decimals, which translates to sub-meter precision)
+* List (containing a type in this list)
+* Set (containing a type in this list)
+
+Klerk requires you to put your values in DataContainers. There are several reasons for this:
 
 ## Validation
 

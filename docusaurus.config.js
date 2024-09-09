@@ -16,7 +16,7 @@ const config = {
   url: 'https://klerkframework.dev',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/website/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -74,7 +74,7 @@ const config = {
             label: 'Documentation',
           },
           {to: 'pathname:///website/apidoc/index.html', label: 'API Reference', position: 'left', target: '_blank',},
-   //       {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/plugins', label: 'Plugins', position: 'left'},
           {to: '/commercial-licence', label: 'Commercial licence', position: 'left'},
           {
@@ -82,7 +82,7 @@ const config = {
             label: 'GitLab',
             position: 'right',
           },
-//          {to: '/blog/rss.xml', position: 'right', label: 'RSS'},
+          {to: 'https://klerkframework.dev/blog/rss.xml', position: 'right', label: 'RSS'},
         ],
       },
       footer: {
