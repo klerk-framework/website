@@ -4,17 +4,17 @@
         <title>Klerk framework</title>
         <link>https://klerkframework.dev/blog</link>
         <description>Klerk Blog</description>
-        <lastBuildDate>Thu, 18 Jul 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Sep 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Klerk is Alpha]]></title>
-            <link>https://klerkframework.dev/blog/2024/07/18/alpha</link>
-            <guid>https://klerkframework.dev/blog/2024/07/18/alpha</guid>
-            <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Klerk is currently in Alpha.]]></description>
-            <content:encoded><![CDATA[<p>Klerk is currently in Alpha.</p>]]></content:encoded>
+            <title><![CDATA[Klerk is now Beta]]></title>
+            <link>https://klerkframework.dev/blog/2024/09/02/beta</link>
+            <guid>https://klerkframework.dev/blog/2024/09/02/beta</guid>
+            <pubDate>Mon, 02 Sep 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Klerk has reached Beta. Note that the API can change frequently. Subscribe to the RSS feed to stay tuned!]]></description>
+            <content:encoded><![CDATA[<p>Klerk has reached Beta. Note that the API can change frequently. Subscribe to the <a href="https://klerkframework.dev/blog/rss.xml" target="_blank" rel="noopener noreferrer">RSS feed</a> to stay tuned!</p>]]></content:encoded>
         </item>
     </channel>
 </rss>
