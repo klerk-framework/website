@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkklerk_website=self.webpackChunkklerk_website||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Klerk is Alpha","permalink":"/website/blog/2024/07/18/alpha","unlisted":false}]}')}}]);

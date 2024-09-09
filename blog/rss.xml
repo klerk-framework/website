@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Klerk framework</title>
-        <link>https://klerkframework.dev/website/blog</link>
+        <link>https://klerkframework.dev/blog</link>
         <description>Klerk Blog</description>
         <lastBuildDate>Thu, 18 Jul 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Klerk is Alpha]]></title>
-            <link>https://klerkframework.dev/website/blog/2024/07/18/alpha</link>
-            <guid>https://klerkframework.dev/website/blog/2024/07/18/alpha</guid>
+            <link>https://klerkframework.dev/blog/2024/07/18/alpha</link>
+            <guid>https://klerkframework.dev/blog/2024/07/18/alpha</guid>
             <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Klerk is currently in Alpha.]]></description>
             <content:encoded><![CDATA[<p>Klerk is currently in Alpha.</p>]]></content:encoded>
