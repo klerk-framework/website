@@ -63,7 +63,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/KlerkLogo2.png',
       navbar: {
         title: 'Klerk',
         items: [
@@ -73,13 +73,13 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: 'pathname:///website/apidoc/index.html', label: 'API Reference', position: 'left', target: '_blank',},
+          {to: 'pathname:///apidoc/index.html', label: 'API Reference', position: 'left', target: '_blank',},
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/plugins', label: 'Plugins', position: 'left'},
           {to: '/commercial-licence', label: 'Commercial licence', position: 'left'},
           {
-            href: 'https://gitlab.com/linustornkrantz/dataframework',
-            label: 'GitLab',
+            href: 'https://github.com/klerk-framework/klerk',
+            label: 'GitHub',
             position: 'right',
           },
           {to: 'https://klerkframework.dev/blog/rss.xml', position: 'right', label: 'RSS'},
@@ -87,7 +87,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} PrettyByte AB.`,
       },
       prism: {
         theme: prismThemes.github,

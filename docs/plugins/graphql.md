@@ -15,7 +15,7 @@ Install GraphQL when configuring Ktor:
 ```
 install(GraphQL) {
         schema {
-            packages = listOf("com.prettybyte.klerk.graphql")
+            packages = listOf("dev.klerkframework.klerk.graphql")
             queries = listOf(GenericQuery(klerk, GraphQLContext::context))
             mutations = listOf(EventMutationService(klerk, GraphQLContext::context))
         }

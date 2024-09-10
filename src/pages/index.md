@@ -1,5 +1,5 @@
 ---
-title: Klerk Framework
+title: Klerk
 ---
 
 ![Klerk logo](/img/KlerkLogo2.png)

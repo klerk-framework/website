@@ -4,38 +4,23 @@ sidebar_position: 1
 
 # Getting Started
 
-:::note
-The documentation is still work in progress.
-:::
-
-Klerk is currently residing in a private repository. Ask for a token, store it on your local file system as described here:
-https://docs.gitlab.com/ee/user/packages/gradle_repository/#authenticate-to-the-package-registry-with-gradle
-
-Add this in build.gradle.kts:
+Add this in settings.gradle.kts:
 
 ```
-repositories {
-    maven {
-        url = uri("https://gitlab.com/api/v4/projects/33843632/packages/maven")
-        name = "GitLab"
-        credentials(HttpHeaderCredentials::class) {
-            name = "Private-Token"
-            value = findProperty("gitLabPrivateToken") as String?
-        }
-        authentication {
-            create("header", HttpHeaderAuthentication::class)
-        }
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven ("https://jitpack.io")
     }
-    ...
 }
 ```
 
-and
+Now add the dependency in build.gradle.kts:
 
 ```
 dependencies {
-    implementation("com.prettybyte:dataframework:<version>")
-    ...
+    implementation("com.github.klerk-framework:<version>")
 }
 ```
 
