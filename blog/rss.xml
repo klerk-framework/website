@@ -3,7 +3,7 @@
     <channel>
         <title>Klerk framework</title>
         <link>https://klerkframework.dev/blog</link>
-        <description>Klerk Blog</description>
+        <description>Klerk Framework Blog</description>
         <lastBuildDate>Mon, 02 Sep 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
