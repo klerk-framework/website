@@ -2,7 +2,7 @@
 title: Klerk
 ---
 
-![Klerk logo](/img/KlerkLogo2.png)
+![Klerk logo](/img/KlerkLogo3.png)
 
 Klerk is a Kotlin framework designed to simplify backend data management by combining the database
 and business-logic layers, giving you a solid foundation to build your application upon. 

@@ -103,3 +103,17 @@ We can now handle the request:
 ```
 val myReport = klerk.read(call.context()) { get(myReportId) }
 ```
+
+## Context Provider
+As described above, Klerk requires a context to be supplied whenever a command is executed. In most cases the command is
+issued by your code and the compiler will warn if you forget to supply a context. However, in some cases a command is
+issued by the system itself, either by a time-triggered block in your state machines or by a plugin. In these cases, a
+context is still required. To make it work, you can add a _context provider_ in the configuration. In its simplest form
+it can look like this:
+
+```
+val config = ConfigBuilder<Ctx, Data>(collections).build {
+    contextProvider { actor -> Ctx(actor) }
+    ...
+}
+```

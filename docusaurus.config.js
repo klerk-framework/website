@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Klerk',
+  title: 'Klerk Framework',
   tagline: 'A Kotlin framework for your data',
   favicon: 'img/favicon.ico',
 
