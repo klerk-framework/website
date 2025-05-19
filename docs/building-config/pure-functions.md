@@ -37,7 +37,7 @@ Klerk provides limited functionality even when the function bodies are empty. It
 to read data and issue commands, but it _is_ possible to view the generated documentation in the Admin UI.
 Take advantage of this: use the state diagrams to make sure the specification is accepted by all stakeholders before writing any code in the function bodies.
 
-Since writing the function bodies and the corresponding unit tests is often straightforward, these tasks can be suitable for junior developers.
+Since writing the function bodies and the corresponding unit tests is often straightforward, these tasks can be suitable for junior developers or AI.
 :::
 
 ## Pure functions

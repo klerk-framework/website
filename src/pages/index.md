@@ -13,7 +13,7 @@ Klerk is open-source under the AGPL licence, with [commercial licenses](commerci
 Klerk means 'bookkeeper' in swedish.
 
 :::note
-Klerk is still in beta. The API is not yet stable.
+Klerk is still in beta. The API is not yet stable. Some of the plugins are still in alpha.
 :::
 
 ## Basic ideas
@@ -81,8 +81,8 @@ revenue. Klerk responds very quickly to requests, enabling developers to build s
 You are free to use other backend components to build
 whatever you want on top of Klerk, such as
 
-* APIs (JSON, REST, GraphQL) for your frontend
 * Web applications using server-generated HTML
+* APIs (JSON, REST, GraphQL) for your SPA frontend
 * Microservices communicating via RPC or message queues
 
 Klerk excels when your business logic can be described as domain events (e.g. "the invoice has been approved") and
@@ -97,7 +97,7 @@ Klerk also has some limitations:
   second on a fairly low-end server. There are plans to
   make Klerk run on multiple instances which will ensure high-availability and scaling.
 
-* Klerk is not designed to handle many thousands of commands per second, but it can sustain over 100 commands per second.
+* Klerk is not designed to handle many thousands of commands (mutations) per second, but it can sustain over 100 commands per second.
 
 * Klerk processes all data at startup, among other things to make sure the configuration (your code) is compatible with all
   data. As a consequence, the upstart time may be noticeable if you have many millions of entities in the system.

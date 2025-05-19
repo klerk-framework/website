@@ -11,8 +11,9 @@ rule preventing the action. In this example, the 'Pay' event can only be trigger
 multi-factor authentication:
 
 ```
-authorizationRules {
-    reads {
+authorization {
+    
+    readModels {
         positive {
             rule(::usersCanReadInvoiceItemNames)
             rule(::usersInTheFinancialDepartmentCanReadEverything)
@@ -20,7 +21,16 @@ authorizationRules {
         negative {
         }
     }
-    events {
+
+    readProperties {
+        positive {
+            rule(::everybodyCanReadAllProperties)
+        }
+        negative {
+        }
+    }
+    
+    commands {
         positive {
             rule(::theCFOCanTriggerAnyEvent)
         }
@@ -28,6 +38,7 @@ authorizationRules {
             rule(::mustBeAuthenticatedWithMultiFactor)
         }
     }
+    
     eventLog {
         positive {
             rule(::superadminCanReadEventLog)
@@ -35,6 +46,7 @@ authorizationRules {
         negative {
         }
     }
+    
 }
 ```
 
@@ -47,3 +59,14 @@ If your rule needs information that is not located within Klerk, it is recommend
 the Context. In this case you would add a field called "isMultiFactorAuthenticated" to the context and use that in the
 rule. It is also possible to make requests to another system over the network within your rules but be aware that this
 may severely impact performance.
+
+:::tip
+If you are eager to get started, just put this in your configuration:
+```
+authorization {
+    apply(insecureAllowEverything())
+}
+```
+This will create rules that allows everything. It will also warn in the log so that you don't forget to change this
+before you deploy your application.
+:::

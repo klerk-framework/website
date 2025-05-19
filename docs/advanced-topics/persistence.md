@@ -14,11 +14,6 @@ use the same database if you want to store data outside Klerk, but be sure to no
 * MariaDB
 * MySQL
 
-Unsupported (but probably works):
-* H2
-* Oracle
-* Microsoft SQL Server
-
 ## Configuration
 
 ### SQLite
