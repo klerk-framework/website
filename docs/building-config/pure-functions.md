@@ -9,7 +9,7 @@ In Klerk, you use the Domain Specific Language (DSL) to define your system at a 
 For example, if you want generals to be allowed to read secret reports, you would define a rule using both the DSL and a pure function:
 
 ```
-val config = ConfigBuilder<Ctx, Data>(collections).build {
+val config = ConfigBuilder<Ctx, Views>(views).build {
     authentication {
        readModel {
           positive {
@@ -20,7 +20,7 @@ val config = ConfigBuilder<Ctx, Data>(collections).build {
     }
 }
 
-fun generalsCanReadSecretReports(args: ArgContextReader<Ctx, Data>): PositiveAuthorization {
+fun generalsCanReadSecretReports(args: ArgContextReader<Ctx, Views>): PositiveAuthorization {
     if (args.model !is Report || args.model.classification != Secret) {
         return NoOpinion
     }

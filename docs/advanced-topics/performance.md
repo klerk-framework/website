@@ -12,4 +12,4 @@ never run into performance problems, but here are some suggestions if you do:
 
 * Deploy (more) read-replicas.
 * Don't hang on to read locks longer than necessary (i.e. avoid the readSuspend method).
-* Create your own collections to speed up reading.
+* Create your own views to speed up reading.

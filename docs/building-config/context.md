@@ -91,7 +91,7 @@ suspend fun ApplicationCall.context(): Ctx {
         return Ctx(Unauthenticated)
     }
     val user = klerk.read(Ctx(AuthenticationIdentity)) {
-        getFirstWhere(collections.users.all) { it.props.sessionKey.string == userSession }
+        getFirstWhere(views.users.all) { it.props.sessionKey.string == userSession }
     }
     if (user == null) {
         return Ctx(Unauthenticated)
@@ -112,7 +112,7 @@ context is still required. To make it work, you can add a _context provider_ in 
 it can look like this:
 
 ```
-val config = ConfigBuilder<Ctx, Data>(collections).build {
+val config = ConfigBuilder<Ctx, Views>(views).build {
     contextProvider { actor -> Ctx(actor) }
     ...
 }

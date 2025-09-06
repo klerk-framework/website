@@ -32,7 +32,7 @@ When developing a system using Klerk, we must:
 
 __1. Build a configuration__: This is where you declare all rules.
 ```
-val config = ConfigBuilder<Ctx, Data>(collections).build {
+val config = ConfigBuilder<Ctx, Views>(views).build {
     // lots of stuff here
 }
 ```

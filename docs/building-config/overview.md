@@ -10,7 +10,7 @@ A configuration must contain at least these items:
 
 * [Persistence](/docs/advanced-topics/persistence): How the data should be stored on disk.
 * One or more [managedModels](/docs/building-config/models-types): A model class together with its state machine and
-  its collections.
+  its views.
 * [Authorization](/docs/building-config/authorization) Rules specifying who should be able to read data, issue commands etc.
 
 It can also contain:
