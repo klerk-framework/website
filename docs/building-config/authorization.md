@@ -51,7 +51,7 @@ authorization {
 ```
 
 As you can see above, you provide Klerk with functions that will be called when the user tries to do
-something. These functions consider the request and current state and returns a decision. So Klerk uses
+something. These functions consider the request and current state and return a decision. So Klerk uses
 attribute-based access control (ABAC). If you prefer role-based access control (RBAC) you can easily implement that
 with a role property on your User model.
 
@@ -69,4 +69,10 @@ authorization {
 ```
 This will create rules that allows everything. It will also warn in the log so that you don't forget to change this
 before you deploy your application.
+:::
+
+:::tip
+It may be tempting to only rely on Klerks authorization rules to secure your application. However, as 
+a defense-in-depth measure, you should also consider adding authorization at the application's frontier, e.g. 
+HTTP endpoints.
 :::
