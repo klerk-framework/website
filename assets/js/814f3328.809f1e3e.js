@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkklerk_website=globalThis.webpackChunkklerk_website||[]).push([[7472],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Klerk is now Beta","permalink":"/blog/2024/09/02/beta","unlisted":false,"date":"2024-09-02T00:00:00.000Z"}]}')}}]);
